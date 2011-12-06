@@ -1,0 +1,7 @@
+PACKAGE_NAME="samsung-laptop-dkms"
+PACKAGE_VERSION="#VERSION#"
+MAKE[0]="make KVER=$kernelver"
+BUILT_MODULE_NAME[0]="samsung-laptop"
+BUILT_MODULE_LOCATION[0]="drivers/platform/x86"
+DEST_MODULE_LOCATION[0]="/updates"
+AUTOINSTALL="yes"

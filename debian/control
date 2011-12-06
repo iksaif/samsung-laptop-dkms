@@ -1,0 +1,12 @@
+Source: samsung-laptop
+Section: kernel
+Priority: optional
+Maintainer: Corentin Chary <corentin.chary@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), dkms (>=1.95)
+Standards-Version: 3.9.1
+
+Package: samsung-laptop-dkms
+Architecture: all
+Depends: dkms (>= 1.95), linux-headers-generic (>= 2.6) | linux-headers, findutils (>= 4), ${misc:Depends}
+Description: Driver for Samsung laptops in DKMS format.
+ This package contains samsung-laptop driver.
