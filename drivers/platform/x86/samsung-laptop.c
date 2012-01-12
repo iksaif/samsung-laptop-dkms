@@ -357,12 +357,12 @@ static struct samsung_quirks samsung_broken_acpi_video = {
 	.broken_acpi_video = true,
 };
 
-static int force;
+static bool force;
 module_param(force, bool, 0);
 MODULE_PARM_DESC(force,
 		"Disable the DMI check and forces the driver to be loaded");
 
-static int debug;
+static bool debug;
 module_param(debug, bool, S_IRUGO | S_IWUSR);
 MODULE_PARM_DESC(debug, "Debug enabled or not");
 
